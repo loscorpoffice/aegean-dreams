@@ -101,32 +101,75 @@ export function AboutSection() {
   );
 }
 
-import accommodationsImage from "@/assets/accommodations-hero.jpg";
+// Rooms Section
+import roomPrivatePool from "@/assets/room-private-pool.jpg";
+import roomSantorini from "@/assets/room-santorini.jpg";
+import roomBarbie from "@/assets/room-barbie.jpg";
 
-export function AccommodationsSection() {
+const rooms = [
+  {
+    title: "Santorini Private Pool Room",
+    subtitle: "Luxury with a Private Indoor Pool",
+    price: "₹7,499/night",
+    image: roomPrivatePool,
+  },
+  {
+    title: "Barbie Themed Room",
+    subtitle: "A Dreamy Pink Fantasy",
+    price: "₹5,999/night",
+    image: roomBarbie,
+  },
+  {
+    title: "Classic Santorini Room",
+    subtitle: "Timeless Greek Elegance",
+    price: "₹4,999/night",
+    image: roomSantorini,
+  },
+];
+
+export function RoomsSection() {
   return (
-    <section className="relative">
-      {/* Title */}
-      <div className="text-center py-8 bg-background">
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-          ACCOMMODATIONS
-        </h2>
-      </div>
+    <section className="bg-background py-12 md:py-16">
+      <div className="container-resort">
+        <div className="text-center mb-12">
+          <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
+            Our Accommodations
+          </p>
+          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+            SUITES & VILLAS
+          </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Experience luxury in our Greek-inspired accommodations, each designed to offer a unique and memorable stay.
+          </p>
+        </div>
 
-      {/* Full-width scenic image */}
-      <div className="relative h-[50vh] md:h-[60vh]">
-        <img
-          src={accommodationsImage}
-          alt="Santorini-style rooms at Greece in Blue Resort"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background/40" />
+        {/* Rooms Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {rooms.map((room) => (
+            <div key={room.title} className="group bg-card rounded-lg overflow-hidden shadow-soft hover-lift">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={room.image}
+                  alt={room.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-medium">
+                  {room.price}
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-xs text-gold uppercase tracking-wide mb-1">{room.subtitle}</p>
+                <h3 className="font-heading text-lg text-foreground">{room.title}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
 
-        {/* Book Now button overlay */}
-        <div className="absolute bottom-8 right-8 md:bottom-12 md:right-12">
+        {/* CTA */}
+        <div className="text-center mt-10">
           <Button variant="gold" size="lg" asChild>
             <Link to="/rooms" className="flex items-center gap-2">
-              BOOK NOW
+              VIEW ALL ROOMS
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -135,11 +178,96 @@ export function AccommodationsSection() {
         </div>
       </div>
 
-      <WaveDivider />
+      <WaveDivider className="mt-12" />
     </section>
   );
 }
 
+// Amenities Section
+import amenityPool from "@/assets/amenity-pool.jpg";
+import amenityTheatre from "@/assets/amenity-theatre.jpg";
+import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
+import { Wifi, Car, Zap, Sun, Camera, Sofa, Waves } from "lucide-react";
+
+const amenitiesList = [
+  { icon: Waves, label: "2 Swimming Pools" },
+  { icon: Sun, label: "Sunbed Areas" },
+  { icon: Camera, label: "Photo Spots" },
+  { icon: Sofa, label: "Outdoor Seating" },
+  { icon: Wifi, label: "Free Wi-Fi" },
+  { icon: Car, label: "Parking" },
+  { icon: Zap, label: "Power Backup" },
+];
+
+const amenityImages = [
+  { src: amenityPool, title: "Swimming Pools" },
+  { src: amenityRestaurant, title: "Rooftop Restaurant" },
+  { src: amenityTheatre, title: "Movie Screening" },
+];
+
+export function AmenitiesSection() {
+  return (
+    <section className="bg-muted/30 py-12 md:py-16">
+      <div className="container-resort">
+        <div className="text-center mb-12">
+          <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
+            Complete Comfort
+          </p>
+          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+            RESORT AMENITIES
+          </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white décor.
+          </p>
+        </div>
+
+        {/* Quick Amenities Icons */}
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12">
+          {amenitiesList.map((amenity) => (
+            <div key={amenity.label} className="flex items-center gap-2 bg-background px-4 py-2 rounded-full shadow-soft">
+              <amenity.icon className="w-5 h-5 text-primary" />
+              <span className="text-sm text-foreground">{amenity.label}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Amenity Images */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {amenityImages.map((item) => (
+            <div key={item.title} className="group relative overflow-hidden rounded-lg shadow-soft hover-lift aspect-[4/3]">
+              <img
+                src={item.src}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent">
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-white font-heading text-lg">{item.title}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-10">
+          <Button variant="aegean" size="lg" asChild>
+            <Link to="/amenities" className="flex items-center gap-2">
+              VIEW ALL AMENITIES
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </Button>
+        </div>
+      </div>
+
+      <WaveDivider className="mt-12" />
+    </section>
+  );
+}
+
+// Activities Section
 import cruiseImage from "@/assets/activity-cruise.jpg";
 import watersportsImage from "@/assets/activity-watersports.jpg";
 import toursImage from "@/assets/activity-tours.jpg";
@@ -149,22 +277,22 @@ const activities = [
   {
     title: "Pool Villas & Pools",
     image: cruiseImage,
-    description: "3 Pool Villas with dedicated Kids' Swimming Pool and large Adult Swimming Pool.",
+    description: "3 Pool Villas with dedicated Kids' & Adult Swimming Pools.",
   },
   {
     title: "Rooftop Restaurant",
     image: watersportsImage,
-    description: "European-style rooftop dining with panoramic mountain views.",
+    description: "European-style dining with panoramic mountain views.",
   },
   {
     title: "Indoor & Outdoor Games",
     image: toursImage,
-    description: "Cricket Turf, indoor games, and exciting activities for everyone.",
+    description: "Cricket Turf, indoor games, and exciting activities.",
   },
   {
     title: "Horse Riding & More",
     image: sightseeingImage,
-    description: "Horse riding, movie screening, and European photo spots.",
+    description: "Horse riding, movie screening, and photo spots.",
   },
 ];
 
@@ -178,7 +306,7 @@ export function ActivitiesSection() {
             <path d="M0,16 Q16,0 32,16 Q48,32 64,16 L64,20 Q48,36 32,20 Q16,4 0,20 Z" />
           </svg>
           <p className="text-muted-foreground italic mt-4">
-            From poolside relaxation to exciting adventures, discover a range of activities designed for couples, families, and anyone seeking a premium holiday.
+            From poolside relaxation to exciting adventures, discover activities for everyone.
           </p>
         </div>
 
@@ -194,29 +322,24 @@ export function ActivitiesSection() {
                 <img
                   src={activity.image}
                   alt={activity.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <h3 className="font-heading text-lg text-foreground mb-2 text-center">
                 {activity.title}
               </h3>
-              <p className="text-sm text-muted-foreground text-center mb-4 line-clamp-2">
+              <p className="text-sm text-muted-foreground text-center line-clamp-2">
                 {activity.description}
               </p>
-              <div className="text-center">
-                <Button variant="aegean" size="sm" asChild>
-                  <Link to="/activities">VIEW ALL</Link>
-                </Button>
-              </div>
             </div>
           ))}
         </div>
 
-        {/* View Gallery CTA */}
-        <div className="text-center mt-12">
+        {/* CTA */}
+        <div className="text-center mt-10">
           <Button variant="goldOutline" size="lg" asChild>
-            <Link to="/gallery" className="flex items-center gap-2">
-              VIEW GALLERY
+            <Link to="/activities" className="flex items-center gap-2">
+              VIEW ALL ACTIVITIES
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -225,7 +348,72 @@ export function ActivitiesSection() {
         </div>
       </div>
 
-      <WaveDivider className="mt-16" />
+      <WaveDivider className="mt-12" />
+    </section>
+  );
+}
+
+// Gallery Section
+import accommodationsHero from "@/assets/accommodations-hero.jpg";
+import coastalView from "@/assets/coastal-view.jpg";
+
+const galleryImages = [
+  { src: heroImage, title: "Infinity Pool" },
+  { src: roomSantorini, title: "Santorini Room" },
+  { src: amenityRestaurant, title: "Rooftop Dining" },
+  { src: roomBarbie, title: "Barbie Room" },
+  { src: amenityPool, title: "Pool Area" },
+  { src: accommodationsHero, title: "Sunset View" },
+];
+
+export function GallerySection() {
+  return (
+    <section className="bg-muted/30 py-12 md:py-16">
+      <div className="container-resort">
+        <div className="text-center mb-12">
+          <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
+            Explore Our Resort
+          </p>
+          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+            GALLERY
+          </h2>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-lg shadow-soft hover-lift aspect-square"
+            >
+              <img
+                src={image.src}
+                alt={image.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-white font-heading">{image.title}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-10">
+          <Button variant="aegean" size="lg" asChild>
+            <Link to="/gallery" className="flex items-center gap-2">
+              VIEW FULL GALLERY
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </Button>
+        </div>
+      </div>
+
+      <WaveDivider className="mt-12" />
     </section>
   );
 }

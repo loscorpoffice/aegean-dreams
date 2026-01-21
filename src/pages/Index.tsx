@@ -2,8 +2,10 @@ import { Layout } from "@/components/layout/Layout";
 import {
   HeroSection,
   AboutSection,
-  AccommodationsSection,
+  RoomsSection,
+  AmenitiesSection,
   ActivitiesSection,
+  GallerySection,
   ClosingSection,
 } from "@/components/home/HomeSections";
 
@@ -12,8 +14,10 @@ const Index = () => {
     <Layout>
       <HeroSection />
       <AboutSection />
-      <AccommodationsSection />
+      <RoomsSection />
+      <AmenitiesSection />
       <ActivitiesSection />
+      <GallerySection />
       <ClosingSection />
     </Layout>
   );
