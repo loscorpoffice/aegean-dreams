@@ -4,6 +4,7 @@ import {
   AboutSection,
   AccommodationsSection,
   ActivitiesSection,
+  ClosingSection,
 } from "@/components/home/HomeSections";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <AboutSection />
       <AccommodationsSection />
       <ActivitiesSection />
+      <ClosingSection />
     </Layout>
   );
 };

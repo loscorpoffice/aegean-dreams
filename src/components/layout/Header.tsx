@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
@@ -43,15 +43,7 @@ export function Header() {
         <div className="container-resort py-2 flex justify-end items-center gap-6 text-sm text-muted-foreground">
           <a href="tel:+919087884841" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Phone className="h-3 w-3" />
-            +91 9087 884841
-          </a>
-          <a href="tel:+919087884842" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Phone className="h-3 w-3" />
-            +91 9087 884842
-          </a>
-          <a href="mailto:greeceinblue@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Mail className="h-3 w-3" />
-            greeceinblue@gmail.com
+            +91 90878-84841
           </a>
         </div>
       </div>
@@ -61,7 +53,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Greece In Blue" className="h-10 md:h-12" />
+            <img src={logo} alt="Greece In Blue Resort" className="h-10 md:h-12" />
             <span className="font-heading text-lg md:text-xl text-primary font-semibold tracking-wide">
               GREECE IN BLUE
             </span>

@@ -11,28 +11,40 @@ import coastalView from "@/assets/coastal-view.jpg";
 
 const activities = [
   {
-    title: "Sunset Cruises",
+    title: "3 Pool Villas & 2 Pools",
     description:
-      "Float across stunning waters on our luxury catamaran as the sun sets over the Aegean. Enjoy refreshments and create magical memories.",
+      "Dedicated Kids' Swimming Pool and large Adult Swimming Pool for the perfect poolside experience.",
     image: cruiseImage,
   },
   {
-    title: "Watersports",
+    title: "Rooftop Restaurant",
     description:
-      "From paddleboarding to jet skiing, explore our crystal-clear waters with exciting activities for all skill levels.",
+      "European-style rooftop dining with multi-cuisine options and stunning panoramic mountain views.",
     image: watersportsImage,
   },
   {
-    title: "Island Tours",
+    title: "Indoor & Outdoor Games",
     description:
-      "Discover the hidden gems of the Greek Islands with our guided tours through charming villages, ancient ruins, and scenic viewpoints.",
+      "Cricket Turf, indoor games, and exciting activities for guests of all ages.",
     image: toursImage,
   },
   {
-    title: "Local Sightseeing",
+    title: "Horse Riding",
     description:
-      "Experience the rich culture and history of the region with visits to temples, museums, and traditional markets.",
+      "Experience the thrill of horse riding amidst the beautiful Anaikatti hills.",
     image: sightseeingImage,
+  },
+  {
+    title: "Movie Screening",
+    description:
+      "Private movie screening sessions with comfortable seating and premium setup.",
+    image: cruiseImage,
+  },
+  {
+    title: "European Photo Spots",
+    description:
+      "Capture stunning moments at our many Greek-inspired photo spots throughout the resort.",
+    image: watersportsImage,
   },
 ];
 
@@ -40,20 +52,24 @@ const Activities = () => {
   return (
     <Layout>
       <PageHero
-        title="Activities"
-        subtitle="Unforgettable Experiences Await"
+        title="Activities & Experiences"
+        subtitle="Adventures Await"
         backgroundImage={coastalView}
-      />
+      >
+        <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
+          From poolside relaxation to exciting adventures, discover a range of activities designed for couples, families, and anyone seeking a premium holiday.
+        </p>
+      </PageHero>
 
       {/* Activities Grid */}
       <section className="container-resort py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity) => (
             <div
               key={activity.title}
               className="group bg-card rounded-lg overflow-hidden shadow-soft hover-lift"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={activity.image}
                   alt={activity.title}
@@ -62,9 +78,9 @@ const Activities = () => {
               </div>
               <div className="p-6 space-y-4">
                 <h3 className="font-heading text-xl text-foreground">{activity.title}</h3>
-                <p className="text-muted-foreground">{activity.description}</p>
+                <p className="text-muted-foreground text-sm">{activity.description}</p>
                 <Button variant="aegean" asChild>
-                  <Link to="/contact">Book Now</Link>
+                  <Link to="/contact">Learn More</Link>
                 </Button>
               </div>
             </div>

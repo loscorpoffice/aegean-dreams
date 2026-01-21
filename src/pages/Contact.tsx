@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { WaveDivider } from "@/components/ui/WaveDivider";
-import { Mail, Phone, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 import { toast } from "sonner";
 import coastalView from "@/assets/coastal-view.jpg";
 import aboutTerrace from "@/assets/about-terrace.jpg";
@@ -28,27 +28,19 @@ const Contact = () => {
   return (
     <Layout>
       <PageHero
-        title="Contact & Book Us"
-        subtitle="Get in touch with us to book your dream getaway to Greece In Blue. We're here to assist you with any inquiries or reservations."
+        title="Contact & Book"
+        subtitle="Get in Touch"
         backgroundImage={coastalView}
         showBookButton={false}
-      />
+      >
+        <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
+          Get in touch with us to book your dream getaway at Greece in Blue. We're here to assist you with any inquiries or reservations.
+        </p>
+      </PageHero>
 
       {/* Contact Info Cards */}
       <section className="container-resort py-12">
-        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-          <div className="glass-card rounded-lg p-6 flex items-center gap-4">
-            <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center">
-              <Mail className="w-5 h-5 text-gold" />
-            </div>
-            <div>
-              <p className="text-sm text-muted-foreground">Email</p>
-              <a href="mailto:greeceinblue@gmail.com" className="font-medium hover:text-primary">
-                greeceinblue@gmail.com
-              </a>
-            </div>
-          </div>
-
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div className="glass-card rounded-lg p-6 flex items-center gap-4">
             <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center">
               <Phone className="w-5 h-5 text-gold" />
@@ -56,18 +48,34 @@ const Contact = () => {
             <div>
               <p className="text-sm text-muted-foreground">Phone</p>
               <a href="tel:+919087884841" className="font-medium hover:text-primary block">
-                +91 9087 884841
-              </a>
-              <a href="tel:+919087884842" className="font-medium hover:text-primary block">
-                +91 9087 884842
+                +91 90878-84841
               </a>
             </div>
           </div>
-        </div>
 
-        <p className="text-center text-muted-foreground mt-6">
-          Feel free to give us a call or send us an email.
-        </p>
+          <div className="glass-card rounded-lg p-6 flex items-center gap-4">
+            <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center">
+              <Mail className="w-5 h-5 text-gold" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Email</p>
+              <a href="mailto:info@greeceinblue.com" className="font-medium hover:text-primary">
+                info@greeceinblue.com
+              </a>
+            </div>
+          </div>
+
+          <div className="glass-card rounded-lg p-6 flex items-center gap-4">
+            <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center">
+              <MapPin className="w-5 h-5 text-gold" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Location</p>
+              <p className="font-medium">Anaikatti Hills, Coimbatore</p>
+              <p className="text-sm text-muted-foreground">Tamil Nadu, India</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Contact Form */}
@@ -120,7 +128,7 @@ const Contact = () => {
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
-                  placeholder="Your message"
+                  placeholder="Your message or booking details"
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -138,7 +146,7 @@ const Contact = () => {
           <div className="hidden md:block">
             <img
               src={aboutTerrace}
-              alt="Resort terrace"
+              alt="Greece in Blue Resort"
               className="w-full h-auto rounded-lg shadow-soft-lg"
             />
           </div>
@@ -149,7 +157,7 @@ const Contact = () => {
       <section className="bg-wave-pattern py-12">
         <div className="container-resort text-center">
           <p className="text-lg text-muted-foreground mb-6">
-            Alternatively, call us directly to book your stay.
+            Prefer to call? Reach us directly to book your stay.
           </p>
 
           <div className="flex justify-center gap-4 mb-8">
@@ -178,7 +186,7 @@ const Contact = () => {
 
           <Button variant="gold" size="xl" asChild>
             <a href="tel:+919087884841" className="flex items-center gap-2">
-              Call Us Now
+              Call: 90878-84841
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
