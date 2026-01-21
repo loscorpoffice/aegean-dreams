@@ -13,29 +13,24 @@ export function HeroSection() {
           alt="Santorini infinity pool overlooking the Aegean Sea"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background" />
+        
+        {/* Welcome Text Overlay - Top */}
+        <div className="absolute top-16 md:top-24 left-0 right-0 text-center z-10">
+          <p className="text-sm tracking-elegant text-white/90 uppercase mb-4 animate-fade-in drop-shadow-lg">
+            Welcome to
+          </p>
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-4 animate-slide-up drop-shadow-lg">
+            GREECE IN BLUE
+          </h1>
+          <p className="font-heading text-lg md:text-xl text-white/90 italic animate-slide-up animation-delay-200 drop-shadow-lg">
+            Discover the Magic of Anaikati
+          </p>
+        </div>
       </div>
 
       {/* Wave Divider */}
       <WaveDivider className="absolute bottom-0 left-0 right-0 z-10" />
-    </section>
-  );
-}
-
-export function WelcomeSection() {
-  return (
-    <section className="bg-background py-16 md:py-20 text-center">
-      <div className="container-resort">
-        <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-4 animate-fade-in">
-          Welcome to
-        </p>
-        <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 animate-slide-up">
-          GREECE IN BLUE
-        </h1>
-        <p className="font-heading text-lg md:text-xl text-muted-foreground italic animate-slide-up animation-delay-200">
-          Discover the Magic of the Aegean
-        </p>
-      </div>
     </section>
   );
 }
