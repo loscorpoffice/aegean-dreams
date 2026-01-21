@@ -10,13 +10,13 @@ export function HeroSection() {
       <div className="w-full h-[70vh] md:h-[85vh] relative">
         <img
           src={heroImage}
-          alt="Santorini infinity pool overlooking the Aegean Sea"
+          alt="Greece in Blue Resort - Santorini-inspired luxury getaway in Anaikatti"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background" />
         
         {/* Welcome Text Overlay - Top */}
-        <div className="absolute top-16 md:top-24 left-0 right-0 text-center z-10">
+        <div className="absolute top-16 md:top-24 left-0 right-0 text-center z-10 px-4">
           <p className="text-sm tracking-elegant text-white/90 uppercase mb-4 animate-fade-in drop-shadow-lg">
             Welcome to
           </p>
@@ -24,8 +24,18 @@ export function HeroSection() {
             GREECE IN BLUE
           </h1>
           <p className="font-heading text-lg md:text-xl text-white/90 italic animate-slide-up animation-delay-200 drop-shadow-lg">
-            Discover the Magic of Anaikati
+            European-Themed Luxury Resort • Anaikatti, Coimbatore
           </p>
+          <p className="text-white/80 mt-4 max-w-2xl mx-auto text-sm md:text-base animate-slide-up animation-delay-300 drop-shadow-lg">
+            A Santorini-inspired luxury getaway nestled in the calm, breezy hills of Anaikatti. Experience the iconic blue-white charm right here in Tamil Nadu.
+          </p>
+          <div className="mt-8 animate-slide-up animation-delay-400">
+            <Button variant="gold" size="lg" asChild>
+              <a href="tel:+919087884841" className="flex items-center gap-2">
+                CALL: 90878-84841
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -41,29 +51,46 @@ export function AboutSection() {
   return (
     <section className="bg-background pb-8">
       <div className="container-resort">
+        <div className="text-center mb-8">
+          <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
+            Welcome to Greece in Blue
+          </p>
+          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+            A Greek Island Escape in Tamil Nadu
+          </h2>
+        </div>
+        
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Image */}
           <div className="relative">
             <img
               src={aboutImage}
-              alt="Coastal terrace with sea view"
+              alt="Greece in Blue Resort architecture with blue-white Greek styling"
               className="w-full h-auto rounded-lg shadow-soft-lg"
             />
           </div>
 
           {/* Content */}
           <div className="space-y-6">
-            <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-              ABOUT US
-            </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Experience the beauty of Greece at our luxurious coastal retreat.
-              Wake up to breathtaking views of the Aegean Sea in serene, comfortable
-              accommodations. Immerse yourself in the charm and elegance of the Greek
-              Islands, where sun-kissed days and unforgettable memories await.
+              Inspired by the iconic blue-white charm of Santorini and the elegance of Roman-style architecture, every corner gives you the feel of a real Greek island escape. Located in the heart of Anaikatti, surrounded by mountains, greenery, and fresh air.
             </p>
+            <div className="flex flex-wrap gap-6 text-center">
+              <div className="flex-1 min-w-[100px]">
+                <span className="font-heading text-3xl text-primary">15</span>
+                <p className="text-sm text-muted-foreground">Themed Rooms</p>
+              </div>
+              <div className="flex-1 min-w-[100px]">
+                <span className="font-heading text-3xl text-primary">3</span>
+                <p className="text-sm text-muted-foreground">Pool Villas</p>
+              </div>
+              <div className="flex-1 min-w-[100px]">
+                <span className="font-heading text-3xl text-primary">2</span>
+                <p className="text-sm text-muted-foreground">Swimming Pools</p>
+              </div>
+            </div>
             <Button variant="aegean" size="lg" asChild>
-              <Link to="/about">READ MORE</Link>
+              <Link to="/rooms">EXPLORE ROOMS</Link>
             </Button>
           </div>
         </div>
@@ -90,7 +117,7 @@ export function AccommodationsSection() {
       <div className="relative h-[50vh] md:h-[60vh]">
         <img
           src={accommodationsImage}
-          alt="Santorini sunset view"
+          alt="Santorini-style rooms at Greece in Blue Resort"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background/40" />
@@ -120,24 +147,24 @@ import sightseeingImage from "@/assets/activity-sightseeing.jpg";
 
 const activities = [
   {
-    title: "Sunset Cruises",
+    title: "Pool Villas & Pools",
     image: cruiseImage,
-    description: "Float across stunning waters with sunset as the only sound.",
+    description: "3 Pool Villas with dedicated Kids' Swimming Pool and large Adult Swimming Pool.",
   },
   {
-    title: "Watersports",
+    title: "Rooftop Restaurant",
     image: watersportsImage,
-    description: "Explore our lush sailing areas for snorkeling and sports.",
+    description: "European-style rooftop dining with panoramic mountain views.",
   },
   {
-    title: "Island Tours",
+    title: "Indoor & Outdoor Games",
     image: toursImage,
-    description: "Roam the idyllic archipelago, gently strolling our secret coastlines.",
+    description: "Cricket Turf, indoor games, and exciting activities for everyone.",
   },
   {
-    title: "Local Sightseeing",
+    title: "Horse Riding & More",
     image: sightseeingImage,
-    description: "Experience a sense of bliss, and the aromas that enrapture.",
+    description: "Horse riding, movie screening, and European photo spots.",
   },
 ];
 
@@ -151,12 +178,12 @@ export function ActivitiesSection() {
             <path d="M0,16 Q16,0 32,16 Q48,32 64,16 L64,20 Q48,36 32,20 Q16,4 0,20 Z" />
           </svg>
           <p className="text-muted-foreground italic mt-4">
-            Indulge in luxurious amenities at our coastal sanctuary.
+            From poolside relaxation to exciting adventures, discover a range of activities designed for couples, families, and anyone seeking a premium holiday.
           </p>
         </div>
 
         <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide text-center mb-12">
-          ACTIVITIES
+          ACTIVITIES & EXPERIENCES
         </h2>
 
         {/* Activities Grid */}
@@ -199,6 +226,30 @@ export function ActivitiesSection() {
       </div>
 
       <WaveDivider className="mt-16" />
+    </section>
+  );
+}
+
+// Closing Section
+export function ClosingSection() {
+  return (
+    <section className="bg-background py-16 text-center">
+      <div className="container-resort">
+        <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4">
+          Experience Paradise in Anaikatti
+        </h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+          Reserve your Santorini-inspired retreat and discover why Greece in Blue is the most unique getaway destination in Tamil Nadu.
+        </p>
+        <Button variant="gold" size="xl" asChild>
+          <Link to="/contact" className="flex items-center gap-2">
+            Book Your Stay
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </Button>
+      </div>
     </section>
   );
 }

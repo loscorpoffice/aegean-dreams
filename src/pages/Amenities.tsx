@@ -8,46 +8,61 @@ import amenityPool from "@/assets/amenity-pool.jpg";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
 import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
 import heroPool from "@/assets/hero-pool.jpg";
+import { Bed, Wifi, Car, Zap, Sun, Camera, Sofa } from "lucide-react";
 
 const amenities = [
   {
     title: "Swimming Pools",
     description:
-      "Relax in our breathtaking infinity pool with panoramic sea views, or enjoy the privacy of your own private pool room.",
+      "2 Swimming Pools including a dedicated Kids' Swimming Pool and large Adult Swimming Pool for ultimate relaxation.",
     image: amenityPool,
     reverse: false,
   },
   {
-    title: "Free Wi-Fi",
+    title: "Rooftop Restaurant",
     description:
-      "Stay connected with complimentary high-speed WiFi available throughout the resort, perfect for browsing and streaming.",
-    image: heroPool,
+      "European-style rooftop dining experience with multi-cuisine options and panoramic mountain views.",
+    image: amenityRestaurant,
     reverse: true,
   },
   {
-    title: "4K Private Theatre",
+    title: "Movie Screening",
     description:
-      "Enjoy the latest movies in our state-of-the-art 4K private theatre, complete with luxurious recliner seats and surround sound.",
+      "Enjoy movie nights in our private screening area with comfortable seating and premium audio-visual setup.",
     image: amenityTheatre,
     reverse: false,
   },
   {
-    title: "Gourmet Restaurant",
+    title: "European Photo Spots",
     description:
-      "Savor exquisite Mediterranean cuisine prepared by our top chefs in a beautiful seaside setting.",
-    image: amenityRestaurant,
+      "Picture-perfect corners with minimal blue-white décor designed for stunning photography sessions.",
+    image: heroPool,
     reverse: true,
   },
+];
+
+const quickAmenities = [
+  { icon: Sun, label: "Comfortable Sunbed Areas" },
+  { icon: Camera, label: "European-Style Photo Spots" },
+  { icon: Sofa, label: "Peaceful Outdoor Seating" },
+  { icon: Bed, label: "24/7 Service Support" },
+  { icon: Car, label: "Parking" },
+  { icon: Zap, label: "Power Backup" },
+  { icon: Wifi, label: "Free Wi-Fi" },
 ];
 
 const Amenities = () => {
   return (
     <Layout>
       <PageHero
-        title="Amenities"
-        subtitle="Enjoy Luxurious Comforts at Greece In Blue"
+        title="Resort Amenities"
+        subtitle="Complete Comfort"
         backgroundImage={coastalView}
-      />
+      >
+        <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
+          Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white décor that makes your stay beautifully memorable.
+        </p>
+      </PageHero>
 
       {/* Breadcrumb */}
       <div className="container-resort py-6">
@@ -59,6 +74,18 @@ const Amenities = () => {
           <span className="text-primary">Amenities</span>
         </nav>
       </div>
+
+      {/* Quick Amenities Grid */}
+      <section className="container-resort pb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+          {quickAmenities.map((amenity) => (
+            <div key={amenity.label} className="text-center p-4 bg-card rounded-lg shadow-soft hover-lift">
+              <amenity.icon className="w-8 h-8 mx-auto mb-2 text-primary" />
+              <p className="text-xs text-muted-foreground">{amenity.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Amenities List */}
       <section className="container-resort pb-16 space-y-16">
@@ -96,6 +123,8 @@ const Amenities = () => {
 
       {/* Final CTA */}
       <section className="bg-background py-16 text-center">
+        <h3 className="font-heading text-xl text-foreground mb-4">Experience All Our Amenities</h3>
+        <p className="text-muted-foreground mb-6">Book your stay and enjoy world-class facilities</p>
         <Button variant="gold" size="xl" asChild>
           <Link to="/contact" className="flex items-center gap-2">
             Book Now
