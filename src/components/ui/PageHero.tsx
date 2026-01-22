@@ -9,6 +9,7 @@ interface PageHeroProps {
   backgroundImage: string;
   showBookButton?: boolean;
   children?: ReactNode;
+  titleClassName?: string;
 }
 
 export function PageHero({
@@ -17,6 +18,7 @@ export function PageHero({
   backgroundImage,
   showBookButton = true,
   children,
+  titleClassName,
 }: PageHeroProps) {
   return (
     <section className="relative">
@@ -30,7 +32,7 @@ export function PageHero({
 
       {/* Content */}
       <div className="relative min-h-[50vh] md:min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-20">
-        <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground italic mb-4 animate-slide-up">
+        <h1 className={`font-heading text-4xl md:text-5xl lg:text-6xl italic mb-4 animate-slide-up ${titleClassName || 'text-foreground'}`}>
           {title}
         </h1>
         {subtitle && (
