@@ -21,13 +21,11 @@ import gallerySunsetView from "@/assets/gallery-sunset-view.webp";
 const categories = ["All", "Resort", "Rooms", "Dining", "Activities", "Amenities"];
 
 const galleryImages = [
-  { src: heroPool, category: "Resort", title: "Infinity Pool" },
   { src: roomSantorini, category: "Rooms", title: "Santorini Bedroom" },
   { src: amenityRestaurant, category: "Dining", title: "Seaside Dining" },
   { src: roomBarbie, category: "Rooms", title: "Barbie Room" },
   { src: amenityPool, category: "Amenities", title: "Blue Dome Pool" },
   { src: watersportsImage, category: "Activities", title: "Watersports" },
-  { src: cruiseImage, category: "Activities", title: "Sunset Cruise" },
   { src: aboutTerrace, category: "Resort", title: "Terrace View" },
   { src: amenityTheatre, category: "Amenities", title: "4K Theatre" },
   { src: roomPrivatePool, category: "Rooms", title: "Private Pool Room" },
