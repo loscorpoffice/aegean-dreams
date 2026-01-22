@@ -15,18 +15,9 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background" />
         
-        {/* Welcome Text Overlay - Top */}
+        {/* Call Button Overlay - Top */}
         <div className="absolute top-16 md:top-24 left-0 right-0 text-center z-10 px-4">
-          <p className="text-sm tracking-elegant text-slate-800 uppercase mb-4 animate-fade-in drop-shadow-sm">
-            Welcome to
-          </p>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-slate-900 mb-4 animate-slide-up drop-shadow-sm">
-            GREECE IN BLUE
-          </h1>
-          <p className="font-heading text-lg md:text-xl text-amber-600 italic animate-slide-up animation-delay-200 drop-shadow-sm">
-            European-Themed Luxury Resort • Anaikatti, Coimbatore
-          </p>
-          <div className="mt-8 animate-slide-up animation-delay-300">
+          <div className="animate-slide-up">
             <Button variant="gold" size="lg" asChild>
               <a href="tel:+919087884841" className="flex items-center gap-2">
                 CALL: 90878-84841
@@ -48,14 +39,6 @@ export function AboutSection() {
   return (
     <section className="bg-background pb-8">
       <div className="container-resort">
-        <div className="text-center mb-8">
-          <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
-            Welcome to Greece in Blue
-          </p>
-          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-            A Greek Island Escape in Tamil Nadu
-          </h2>
-        </div>
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Image */}
