@@ -11,7 +11,7 @@ import amenityPool from "@/assets/amenity-pool.jpg";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
 import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
 import cruiseImage from "@/assets/activity-cruise.jpg";
-import watersportsImage from "@/assets/activity-watersports.jpg";
+import galleryWatersports from "@/assets/gallery-watersports.webp";
 import toursImage from "@/assets/activity-tours.jpg";
 import sightseeingImage from "@/assets/activity-sightseeing.jpg";
 import accommodationsHero from "@/assets/accommodations-hero.jpg";
@@ -25,7 +25,7 @@ const galleryImages = [
   { src: amenityRestaurant, category: "Dining", title: "Seaside Dining" },
   { src: roomBarbie, category: "Rooms", title: "Barbie Room" },
   { src: amenityPool, category: "Amenities", title: "Blue Dome Pool" },
-  { src: watersportsImage, category: "Activities", title: "Watersports" },
+  { src: galleryWatersports, category: "Activities", title: "Watersports" },
   { src: aboutTerrace, category: "Resort", title: "Terrace View" },
   { src: amenityTheatre, category: "Amenities", title: "4K Theatre" },
   { src: roomPrivatePool, category: "Rooms", title: "Private Pool Room" },
