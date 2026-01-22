@@ -15,9 +15,15 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background" />
         
-        {/* Call Button Overlay - Top */}
+        {/* Hero Text Overlay - Top */}
         <div className="absolute top-16 md:top-24 left-0 right-0 text-center z-10 px-4">
-          <div className="animate-slide-up">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-slate-900 mb-4 animate-slide-up drop-shadow-sm">
+            GREECE IN BLUE
+          </h1>
+          <p className="font-heading text-lg md:text-xl text-amber-600 italic animate-slide-up animation-delay-200 drop-shadow-sm">
+            European-Themed Luxury Resort · Anaikatti, Coimbatore
+          </p>
+          <div className="mt-8 animate-slide-up animation-delay-300">
             <Button variant="gold" size="lg" asChild>
               <a href="tel:+919087884841" className="flex items-center gap-2">
                 CALL: 90878-84841
