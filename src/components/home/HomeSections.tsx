@@ -88,7 +88,7 @@ export function AboutSection() {
 }
 
 // Rooms Section
-import roomPrivatePool from "@/assets/room-private-pool.jpg";
+import roomPrivatePool from "@/assets/room-private-pool.webp";
 import roomSantorini from "@/assets/room-santorini.jpg";
 import roomBarbie from "@/assets/room-barbie.jpg";
 
@@ -258,11 +258,12 @@ import cruiseImage from "@/assets/activity-cruise.jpg";
 import watersportsImage from "@/assets/activity-watersports.jpg";
 import toursImage from "@/assets/activity-tours.jpg";
 import sightseeingImage from "@/assets/activity-sightseeing.jpg";
+import homePoolVillas from "@/assets/room-private-pool.webp";
 
 const activities = [
   {
     title: "Pool Villas & Pools",
-    image: cruiseImage,
+    image: homePoolVillas,
     description: "3 Pool Villas with dedicated Kids' & Adult Swimming Pools.",
   },
   {

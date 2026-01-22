@@ -4,7 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { WaveDivider } from "@/components/ui/WaveDivider";
 import coastalView from "@/assets/coastal-view.jpg";
 import heroPool from "@/assets/hero-pool.jpg";
-import roomPrivatePool from "@/assets/room-private-pool.jpg";
+import roomPrivatePool from "@/assets/room-private-pool.webp";
 import roomSantorini from "@/assets/room-santorini.jpg";
 import roomBarbie from "@/assets/room-barbie.jpg";
 import amenityPool from "@/assets/amenity-pool.webp";

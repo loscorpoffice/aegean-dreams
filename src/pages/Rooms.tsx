@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { WaveDivider } from "@/components/ui/WaveDivider";
 import accommodationsHero from "@/assets/accommodations-hero.jpg";
-import roomPrivatePool from "@/assets/room-private-pool.jpg";
+import roomPrivatePool from "@/assets/room-private-pool.webp";
 import roomSantorini from "@/assets/room-santorini.jpg";
 import roomBarbie from "@/assets/room-barbie.jpg";
 
