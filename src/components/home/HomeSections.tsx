@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { WaveDivider } from "@/components/ui/WaveDivider";
-import heroImage from "@/assets/hero-resort.png";
+import heroImage from "@/assets/hero-resort.webp";
 
 export function HeroSection() {
   return (
@@ -26,16 +26,16 @@ export function HeroSection() {
           <p className="font-heading text-lg md:text-xl text-amber-600 italic animate-slide-up animation-delay-200 drop-shadow-sm">
             European-Themed Luxury Resort • Anaikatti, Coimbatore
           </p>
-          <p className="text-slate-700 mt-4 max-w-2xl mx-auto text-sm md:text-base animate-slide-up animation-delay-300 drop-shadow-sm">
-            A Santorini-inspired luxury getaway nestled in the calm, breezy hills of Anaikatti. Experience the iconic blue-white charm right here in Tamil Nadu.
-          </p>
-          <div className="mt-8 animate-slide-up animation-delay-400">
+          <div className="mt-8 animate-slide-up animation-delay-300">
             <Button variant="gold" size="lg" asChild>
               <a href="tel:+919087884841" className="flex items-center gap-2">
                 CALL: 90878-84841
               </a>
             </Button>
           </div>
+          <p className="text-slate-700 mt-6 max-w-2xl mx-auto text-sm md:text-base animate-slide-up animation-delay-400 drop-shadow-sm">
+            A Santorini-inspired luxury getaway nestled in the calm, breezy hills of Anaikatti. Experience the iconic blue-white charm right here in Tamil Nadu.
+          </p>
         </div>
       </div>
 
