@@ -63,8 +63,8 @@ const Contact = () => {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Email</p>
-              <a href="mailto:info@greeceinblue.com" className="font-medium hover:text-primary">
-                info@greeceinblue.com
+              <a href="mailto:greeceinblue@gmail.com" className="font-medium hover:text-primary">
+                greeceinblue@gmail.com
               </a>
             </div>
           </div>
