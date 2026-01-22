@@ -25,7 +25,7 @@ const rooms = [
     title: "Barbie Themed Room",
     subtitle: "A Dreamy Pink Fantasy",
     description:
-      "Dreamy pink escape with blush interiors, rose-gold accents, and picture-perfect décor. Ideal for girls' trips, birthdays, and content shoots.",
+      "Dreamy pink escape with blush interiors, rose-gold accents, and picture-perfect decor. Ideal for girls' trips, birthdays, and content shoots.",
     price: "₹5,999/night",
     capacity: "2-3 Adults",
     availability: "6 Rooms Available",
@@ -41,7 +41,7 @@ const rooms = [
     price: "₹4,999/night",
     capacity: "2 Adults",
     availability: "6 Rooms Available",
-    features: ["King Beds", "Traditional Greek Décor", "Air Conditioning", "Smart TV"],
+    features: ["King Beds", "Traditional Greek Decor", "Air Conditioning", "Smart TV"],
     image: roomSantorini,
     reverse: false,
   },

@@ -15,7 +15,7 @@ const diningOptions = [
     image: amenityRestaurant,
   },
   {
-    title: "Poolside Café",
+    title: "Poolside Cafe",
     subtitle: "Light Bites & Refreshments",
     description: "Refreshing drinks and snacks by the pool. Enjoy light bites and cooling beverages while lounging in the Santorini-inspired surroundings.",
     image: poolsideCafe,

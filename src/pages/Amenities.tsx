@@ -35,7 +35,7 @@ const amenities = [
   {
     title: "European Photo Spots",
     description:
-      "Picture-perfect corners with minimal blue-white décor designed for stunning photography sessions.",
+      "Picture-perfect corners with minimal blue-white decor designed for stunning photography sessions.",
     image: heroPool,
     reverse: true,
   },
@@ -60,7 +60,7 @@ const Amenities = () => {
         backgroundImage={coastalView}
       >
         <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
-          Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white décor that makes your stay beautifully memorable.
+          Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white decor that makes your stay beautifully memorable.
         </p>
       </PageHero>
 
