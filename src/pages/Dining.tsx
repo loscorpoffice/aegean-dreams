@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { WaveDivider } from "@/components/ui/WaveDivider";
 import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
-import heroPool from "@/assets/hero-pool.jpg";
+import poolsideCafe from "@/assets/dining-poolside-cafe.webp";
 import coastalView from "@/assets/coastal-view.jpg";
 
 const diningOptions = [
@@ -18,7 +18,7 @@ const diningOptions = [
     title: "Poolside Café",
     subtitle: "Light Bites & Refreshments",
     description: "Refreshing drinks and snacks by the pool. Enjoy light bites and cooling beverages while lounging in the Santorini-inspired surroundings.",
-    image: heroPool,
+    image: poolsideCafe,
   },
   {
     title: "Lawn Events",
