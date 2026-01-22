@@ -35,6 +35,7 @@ const Dining = () => {
         title="Dining & Celebrations"
         subtitle="Culinary Experiences"
         backgroundImage={diningRooftop}
+        titleClassName="text-white"
       >
         <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
           Enjoy delicious multi-cuisine dining at our rooftop restaurant with stunning mountain views, or host your dream lawn wedding in our beautifully designed outdoor spaces.
