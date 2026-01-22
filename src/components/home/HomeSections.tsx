@@ -203,7 +203,7 @@ export function AmenitiesSection() {
             RESORT AMENITIES
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white décor.
+            Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white decor.
           </p>
         </div>
 
