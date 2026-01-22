@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { WaveDivider } from "@/components/ui/WaveDivider";
-import heroImage from "@/assets/hero-pool.jpg";
+import heroImage from "@/assets/hero-resort.png";
 
 export function HeroSection() {
   return (
