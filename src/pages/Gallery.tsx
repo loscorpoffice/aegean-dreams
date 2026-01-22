@@ -16,6 +16,7 @@ import toursImage from "@/assets/activity-tours.jpg";
 import sightseeingImage from "@/assets/activity-sightseeing.jpg";
 import accommodationsHero from "@/assets/accommodations-hero.jpg";
 import aboutTerrace from "@/assets/about-terrace.jpg";
+import gallerySunsetView from "@/assets/gallery-sunset-view.webp";
 
 const categories = ["All", "Resort", "Rooms", "Dining", "Activities", "Amenities"];
 
@@ -31,7 +32,7 @@ const galleryImages = [
   { src: amenityTheatre, category: "Amenities", title: "4K Theatre" },
   { src: roomPrivatePool, category: "Rooms", title: "Private Pool Room" },
   { src: toursImage, category: "Activities", title: "Island Tours" },
-  { src: accommodationsHero, category: "Resort", title: "Sunset View" },
+  { src: gallerySunsetView, category: "Resort", title: "Sunset View" },
 ];
 
 const Gallery = () => {
