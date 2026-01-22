@@ -7,7 +7,7 @@ import heroPool from "@/assets/hero-pool.jpg";
 import roomPrivatePool from "@/assets/room-private-pool.jpg";
 import roomSantorini from "@/assets/room-santorini.jpg";
 import roomBarbie from "@/assets/room-barbie.jpg";
-import amenityPool from "@/assets/amenity-pool.jpg";
+import amenityPool from "@/assets/amenity-pool.webp";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
 import diningRooftop from "@/assets/dining-rooftop.webp";
 import cruiseImage from "@/assets/activity-cruise.jpg";

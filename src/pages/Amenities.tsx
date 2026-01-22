@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { WaveDivider } from "@/components/ui/WaveDivider";
 import coastalView from "@/assets/coastal-view.jpg";
-import amenityPool from "@/assets/amenity-pool.jpg";
+import amenityPool from "@/assets/amenity-pool.webp";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
 import diningRooftop from "@/assets/dining-rooftop.webp";
 import europeanPhotoSpots from "@/assets/european-photo-spots.webp";
