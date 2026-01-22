@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { WaveDivider } from "@/components/ui/WaveDivider";
 import cruiseImage from "@/assets/activity-cruise.jpg";
+import roomPrivatePool from "@/assets/room-private-pool.webp";
 import watersportsImage from "@/assets/activity-watersports.jpg";
 import toursImage from "@/assets/activity-tours.jpg";
 import sightseeingImage from "@/assets/activity-sightseeing.jpg";
@@ -15,7 +16,7 @@ const activities = [
     title: "3 Pool Villas & 2 Pools",
     description:
       "Dedicated Kids' Swimming Pool and large Adult Swimming Pool for the perfect poolside experience.",
-    image: cruiseImage,
+    image: roomPrivatePool,
   },
   {
     title: "Rooftop Restaurant",
