@@ -7,7 +7,7 @@ import coastalView from "@/assets/coastal-view.jpg";
 import amenityPool from "@/assets/amenity-pool.jpg";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
 import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
-import heroPool from "@/assets/hero-pool.jpg";
+import europeanPhotoSpots from "@/assets/european-photo-spots.webp";
 import { Bed, Wifi, Car, Zap, Sun, Camera, Sofa } from "lucide-react";
 
 const amenities = [
@@ -36,7 +36,7 @@ const amenities = [
     title: "European Photo Spots",
     description:
       "Picture-perfect corners with minimal blue-white decor designed for stunning photography sessions.",
-    image: heroPool,
+    image: europeanPhotoSpots,
     reverse: true,
   },
 ];
