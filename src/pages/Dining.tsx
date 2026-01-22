@@ -3,7 +3,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { WaveDivider } from "@/components/ui/WaveDivider";
-import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
+import diningRooftop from "@/assets/dining-rooftop.webp";
 import poolsideCafe from "@/assets/dining-poolside-cafe.webp";
 import coastalView from "@/assets/coastal-view.jpg";
 
@@ -12,7 +12,7 @@ const diningOptions = [
     title: "Rooftop Restaurant",
     subtitle: "Multi-Cuisine",
     description: "Dine with panoramic mountain views in European ambiance. Our rooftop restaurant offers a wide variety of multi-cuisine options prepared with fresh, local ingredients.",
-    image: amenityRestaurant,
+    image: diningRooftop,
   },
   {
     title: "Poolside Cafe",
@@ -34,7 +34,7 @@ const Dining = () => {
       <PageHero
         title="Dining & Celebrations"
         subtitle="Culinary Experiences"
-        backgroundImage={amenityRestaurant}
+        backgroundImage={diningRooftop}
       >
         <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
           Enjoy delicious multi-cuisine dining at our rooftop restaurant with stunning mountain views, or host your dream lawn wedding in our beautifully designed outdoor spaces.

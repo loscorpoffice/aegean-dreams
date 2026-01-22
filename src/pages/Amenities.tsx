@@ -6,7 +6,7 @@ import { WaveDivider } from "@/components/ui/WaveDivider";
 import coastalView from "@/assets/coastal-view.jpg";
 import amenityPool from "@/assets/amenity-pool.jpg";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
-import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
+import diningRooftop from "@/assets/dining-rooftop.webp";
 import europeanPhotoSpots from "@/assets/european-photo-spots.webp";
 import { Bed, Wifi, Car, Zap, Sun, Camera, Sofa } from "lucide-react";
 
@@ -22,7 +22,7 @@ const amenities = [
     title: "Rooftop Restaurant",
     description:
       "European-style rooftop dining experience with multi-cuisine options and panoramic mountain views.",
-    image: amenityRestaurant,
+    image: diningRooftop,
     reverse: true,
   },
   {

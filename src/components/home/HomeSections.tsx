@@ -172,7 +172,7 @@ export function RoomsSection() {
 // Amenities Section
 import amenityPool from "@/assets/amenity-pool.jpg";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
-import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
+import diningRooftop from "@/assets/dining-rooftop.webp";
 import { Wifi, Car, Zap, Sun, Camera, Sofa, Waves } from "lucide-react";
 
 const amenitiesList = [
@@ -187,7 +187,7 @@ const amenitiesList = [
 
 const amenityImages = [
   { src: amenityPool, title: "Swimming Pools" },
-  { src: amenityRestaurant, title: "Rooftop Restaurant" },
+  { src: diningRooftop, title: "Rooftop Restaurant" },
   { src: amenityTheatre, title: "Movie Screening" },
 ];
 
@@ -346,7 +346,7 @@ import coastalView from "@/assets/coastal-view.jpg";
 const galleryImages = [
   { src: heroImage, title: "Infinity Pool" },
   { src: roomSantorini, title: "Santorini Room" },
-  { src: amenityRestaurant, title: "Rooftop Dining" },
+  { src: diningRooftop, title: "Rooftop Dining" },
   { src: roomBarbie, title: "Barbie Room" },
   { src: amenityPool, title: "Pool Area" },
   { src: accommodationsHero, title: "Sunset View" },

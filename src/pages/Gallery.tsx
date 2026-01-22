@@ -9,7 +9,7 @@ import roomSantorini from "@/assets/room-santorini.jpg";
 import roomBarbie from "@/assets/room-barbie.jpg";
 import amenityPool from "@/assets/amenity-pool.jpg";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
-import amenityRestaurant from "@/assets/amenity-restaurant.jpg";
+import diningRooftop from "@/assets/dining-rooftop.webp";
 import cruiseImage from "@/assets/activity-cruise.jpg";
 import galleryWatersports from "@/assets/gallery-watersports.webp";
 import toursImage from "@/assets/activity-tours.jpg";
@@ -22,7 +22,7 @@ const categories = ["All", "Resort", "Rooms", "Dining", "Activities", "Amenities
 
 const galleryImages = [
   { src: roomSantorini, category: "Rooms", title: "Santorini Bedroom" },
-  { src: amenityRestaurant, category: "Dining", title: "Seaside Dining" },
+  { src: diningRooftop, category: "Dining", title: "Rooftop Restaurant" },
   { src: roomBarbie, category: "Rooms", title: "Barbie Room" },
   { src: amenityPool, category: "Amenities", title: "Blue Dome Pool" },
   { src: galleryWatersports, category: "Activities", title: "Watersports" },
