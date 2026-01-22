@@ -8,6 +8,7 @@ import watersportsImage from "@/assets/activity-watersports.jpg";
 import toursImage from "@/assets/activity-tours.jpg";
 import sightseeingImage from "@/assets/activity-sightseeing.jpg";
 import coastalView from "@/assets/coastal-view.jpg";
+import diningRooftop from "@/assets/dining-rooftop.webp";
 
 const activities = [
   {
@@ -20,7 +21,7 @@ const activities = [
     title: "Rooftop Restaurant",
     description:
       "European-style rooftop dining with multi-cuisine options and stunning panoramic mountain views.",
-    image: watersportsImage,
+    image: diningRooftop,
   },
   {
     title: "Indoor & Outdoor Games",
