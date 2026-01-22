@@ -33,9 +33,6 @@ export function HeroSection() {
               </a>
             </Button>
           </div>
-          <p className="text-slate-700 mt-6 max-w-2xl mx-auto text-sm md:text-base animate-slide-up animation-delay-400 drop-shadow-sm">
-            A Santorini-inspired luxury getaway nestled in the calm, breezy hills of Anaikatti. Experience the iconic blue-white charm right here in Tamil Nadu.
-          </p>
         </div>
       </div>
 
