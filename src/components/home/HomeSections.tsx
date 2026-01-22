@@ -170,7 +170,7 @@ export function RoomsSection() {
 }
 
 // Amenities Section
-import amenityPool from "@/assets/amenity-pool.jpg";
+import amenityPool from "@/assets/amenity-pool.webp";
 import amenityTheatre from "@/assets/amenity-theatre.jpg";
 import diningRooftop from "@/assets/dining-rooftop.webp";
 import { Wifi, Car, Zap, Sun, Camera, Sofa, Waves } from "lucide-react";
