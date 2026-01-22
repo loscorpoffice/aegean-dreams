@@ -39,7 +39,7 @@ export function HeroSection() {
   );
 }
 
-import aboutImage from "@/assets/about-terrace.jpg";
+import aboutImage from "@/assets/about-terrace.webp";
 
 export function AboutSection() {
   return (
