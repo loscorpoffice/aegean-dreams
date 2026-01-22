@@ -32,6 +32,7 @@ const Contact = () => {
         subtitle="Get in Touch"
         backgroundImage={coastalView}
         showBookButton={false}
+        titleClassName="text-white"
       >
         <p className="text-white/80 max-w-2xl mx-auto mt-4 text-center animate-slide-up animation-delay-300">
           Get in touch with us to book your dream getaway at Greece in Blue. We're here to assist you with any inquiries or reservations.
@@ -49,6 +50,9 @@ const Contact = () => {
               <p className="text-sm text-muted-foreground">Phone</p>
               <a href="tel:+919087884841" className="font-medium hover:text-primary block">
                 +91 90878-84841
+              </a>
+              <a href="tel:+919087884842" className="font-medium hover:text-primary block">
+                +91 90878-84842
               </a>
             </div>
           </div>

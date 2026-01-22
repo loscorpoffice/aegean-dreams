@@ -36,7 +36,7 @@ export function PageHero({
           {title}
         </h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl animate-slide-up animation-delay-200">
+          <p className={`text-lg md:text-xl max-w-2xl animate-slide-up animation-delay-200 ${titleClassName ? 'text-white/90' : 'text-muted-foreground'}`}>
             {subtitle}
           </p>
         )}
