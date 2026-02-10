@@ -199,9 +199,9 @@ export function AmenitiesSection() {
           <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
             Complete Comfort
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-            RESORT AMENITIES
-          </h2>
+           <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+             RESORT AMENITIES AT GREECE IN BLUE
+           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white decor.
           </p>
