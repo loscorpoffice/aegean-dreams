@@ -8,11 +8,11 @@ export function HeroSection() {
     <section className="relative">
       {/* Hero Image */}
       <div className="w-full h-[70vh] md:h-[85vh] relative">
-        <img
-          src={heroImage}
-          alt="Greece in Blue Resort - Santorini-inspired luxury getaway in Anaikatti"
-          className="w-full h-full object-cover"
-        />
+         <img
+           src={heroImage}
+           alt="Greece In Blue Resort - Luxury pool villa and Santorini-themed resort in Coimbatore, Anaikatti"
+           className="w-full h-full object-cover"
+         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background" />
         
         {/* Hero Text Overlay - Top */}
