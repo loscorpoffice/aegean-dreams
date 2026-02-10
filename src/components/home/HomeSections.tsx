@@ -410,12 +410,12 @@ export function ClosingSection() {
   return (
     <section className="bg-background py-16 text-center">
       <div className="container-resort">
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4">
-          Experience Paradise in Anaikatti
-        </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-          Reserve your Santorini-inspired retreat and discover why Greece in Blue is the most unique getaway destination in Tamil Nadu.
-        </p>
+         <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4">
+           Book Your Stay at Greece In Blue Resort, Coimbatore
+         </h2>
+         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+           Reserve your Santorini-inspired retreat at the best luxury resort in Coimbatore. Discover why Greece In Blue is the most unique getaway destination in Tamil Nadu.
+         </p>
         <Button variant="gold" size="xl" asChild>
           <Link to="/contact" className="flex items-center gap-2">
             Book Your Stay
