@@ -8,21 +8,21 @@ export function HeroSection() {
     <section className="relative">
       {/* Hero Image */}
       <div className="w-full h-[70vh] md:h-[85vh] relative">
-        <img
-          src={heroImage}
-          alt="Greece in Blue Resort - Santorini-inspired luxury getaway in Anaikatti"
-          className="w-full h-full object-cover"
-        />
+         <img
+           src={heroImage}
+           alt="Greece In Blue Resort - Luxury pool villa and Santorini-themed resort in Coimbatore, Anaikatti"
+           className="w-full h-full object-cover"
+         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background" />
         
         {/* Hero Text Overlay - Top */}
         <div className="absolute top-16 md:top-24 left-0 right-0 text-center z-10 px-4">
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-slate-900 mb-4 animate-slide-up drop-shadow-sm">
-            GREECE IN BLUE
-          </h1>
-          <p className="font-heading text-lg md:text-xl text-amber-600 italic animate-slide-up animation-delay-200 drop-shadow-sm">
-            European-Themed Luxury Resort · Anaikatti, Coimbatore
-          </p>
+           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-slate-900 mb-4 animate-slide-up drop-shadow-sm">
+             Greece In Blue Resort
+           </h1>
+           <p className="font-heading text-lg md:text-xl text-amber-600 italic animate-slide-up animation-delay-200 drop-shadow-sm">
+             Luxury Santorini-Themed Resort in Coimbatore · Anaikatti Hills
+           </p>
           <div className="mt-8 animate-slide-up animation-delay-300">
             <Button variant="gold" size="lg" asChild>
               <a href="tel:+919087884841" className="flex items-center gap-2">
@@ -49,11 +49,11 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Image */}
           <div className="relative">
-            <img
-              src={aboutImage}
-              alt="Greece in Blue Resort architecture with blue-white Greek styling"
-              className="w-full h-auto rounded-lg shadow-soft-lg"
-            />
+             <img
+               src={aboutImage}
+               alt="Greece In Blue Resort Coimbatore - European-style architecture with blue-white Greek styling"
+               className="w-full h-auto rounded-lg shadow-soft-lg"
+             />
           </div>
 
           {/* Content */}
@@ -121,9 +121,9 @@ export function RoomsSection() {
           <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
             Our Accommodations
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-            SUITES & VILLAS
-          </h2>
+           <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+             LUXURY SUITES & POOL VILLAS IN COIMBATORE
+           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Experience luxury in our Greek-inspired accommodations, each designed to offer a unique and memorable stay.
           </p>
@@ -199,9 +199,9 @@ export function AmenitiesSection() {
           <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
             Complete Comfort
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-            RESORT AMENITIES
-          </h2>
+           <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+             RESORT AMENITIES AT GREECE IN BLUE
+           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Experience a private and soothing atmosphere filled with soft lighting, photo-friendly corners, and minimal blue-white decor.
           </p>
@@ -297,9 +297,9 @@ export function ActivitiesSection() {
           </p>
         </div>
 
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide text-center mb-12">
-          ACTIVITIES & EXPERIENCES
-        </h2>
+         <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide text-center mb-12">
+           ACTIVITIES & EXPERIENCES AT OUR COIMBATORE RESORT
+         </h2>
 
         {/* Activities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -410,12 +410,12 @@ export function ClosingSection() {
   return (
     <section className="bg-background py-16 text-center">
       <div className="container-resort">
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4">
-          Experience Paradise in Anaikatti
-        </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-          Reserve your Santorini-inspired retreat and discover why Greece in Blue is the most unique getaway destination in Tamil Nadu.
-        </p>
+         <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4">
+           Book Your Stay at Greece In Blue Resort, Coimbatore
+         </h2>
+         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+           Reserve your Santorini-inspired retreat at the best luxury resort in Coimbatore. Discover why Greece In Blue is the most unique getaway destination in Tamil Nadu.
+         </p>
         <Button variant="gold" size="xl" asChild>
           <Link to="/contact" className="flex items-center gap-2">
             Book Your Stay
