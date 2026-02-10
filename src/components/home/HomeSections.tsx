@@ -297,9 +297,9 @@ export function ActivitiesSection() {
           </p>
         </div>
 
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide text-center mb-12">
-          ACTIVITIES & EXPERIENCES
-        </h2>
+         <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide text-center mb-12">
+           ACTIVITIES & EXPERIENCES AT OUR COIMBATORE RESORT
+         </h2>
 
         {/* Activities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
