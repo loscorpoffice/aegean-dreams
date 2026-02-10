@@ -121,9 +121,9 @@ export function RoomsSection() {
           <p className="text-sm tracking-elegant text-muted-foreground uppercase mb-2">
             Our Accommodations
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
-            SUITES & VILLAS
-          </h2>
+           <h2 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide">
+             LUXURY SUITES & POOL VILLAS IN COIMBATORE
+           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Experience luxury in our Greek-inspired accommodations, each designed to offer a unique and memorable stay.
           </p>
