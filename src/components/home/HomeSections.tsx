@@ -49,11 +49,11 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Image */}
           <div className="relative">
-            <img
-              src={aboutImage}
-              alt="Greece in Blue Resort architecture with blue-white Greek styling"
-              className="w-full h-auto rounded-lg shadow-soft-lg"
-            />
+             <img
+               src={aboutImage}
+               alt="Greece In Blue Resort Coimbatore - European-style architecture with blue-white Greek styling"
+               className="w-full h-auto rounded-lg shadow-soft-lg"
+             />
           </div>
 
           {/* Content */}
