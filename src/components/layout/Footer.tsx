@@ -99,6 +99,10 @@ export function Footer() {
           <Link to="/privacy-policy" className="hover:text-primary-foreground hover:underline transition-colors">
             Privacy Policy
           </Link>
+          <span className="hidden md:inline">|</span>
+          <Link to="/terms-of-service" className="hover:text-primary-foreground hover:underline transition-colors">
+            Terms of Service
+          </Link>
         </div>
       </div>
     </footer>
