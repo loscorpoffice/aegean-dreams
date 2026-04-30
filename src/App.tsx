@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery";
 import PopularPlaces from "./pages/PopularPlaces";
 import Contact from "./pages/Contact";
 import Dining from "./pages/Dining";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/popular-places" element={<PopularPlaces />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/dining" element={<Dining />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

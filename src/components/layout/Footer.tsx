@@ -93,8 +93,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-sm text-primary-foreground/60">
+        <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-center text-sm text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Greece In Blue. All rights reserved.</p>
+          <span className="hidden md:inline">|</span>
+          <Link to="/privacy-policy" className="hover:text-primary-foreground hover:underline transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
