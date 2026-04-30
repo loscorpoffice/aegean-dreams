@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { PageHero } from "@/components/ui/PageHero";
+import coastalView from "@/assets/coastal-view.jpg";
 
 const PrivacyPolicy = () => {
   return (
@@ -7,6 +8,8 @@ const PrivacyPolicy = () => {
       <PageHero
         title="Privacy Policy"
         subtitle="How Greece In Blue collects, uses, and protects your information"
+        backgroundImage={coastalView}
+        showBookButton={false}
         titleClassName="text-white"
       />
       <section className="container-resort py-16">
